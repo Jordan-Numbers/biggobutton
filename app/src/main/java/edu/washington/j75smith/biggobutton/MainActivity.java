@@ -1,5 +1,6 @@
 package edu.washington.j75smith.biggobutton;
 
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,9 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bigButton = (Button) this.findViewById(R.id.button);
+        bigButton.setTextSize(40);
+        bigButton.setTextColor(Color.RED);
+        bigButton.setBackgroundColor(Color.GREEN);
         bigButton.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
